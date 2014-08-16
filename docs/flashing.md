@@ -6,7 +6,7 @@ To flash your Arduino follow these steps:
 2. Select File -> Open from the menu
   1. Select the SimpleBotFirmata/SimpleBotFirmata.ino file from the SimpleBot repository
   2. Click Open
-3. Select Tools -> Board -> <Your Board> from the menu
+3. Select Tools -> Board -> &lt;Your Board&gt; from the menu
   1. The 2014 NodeBotsDay used the Arduino Nano which sometimes shows up as "Arduino Nano w/ ATmega328"
 4. Plug the Arduino into your USB port
 5. Select Tools -> Serial Port -> /dev/tty.usbserial.XXXX from the menu
