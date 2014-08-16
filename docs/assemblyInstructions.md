@@ -14,11 +14,11 @@ You can assemble your simple bot in the order that suits you best. You could do 
   1. Cut 4 lengths of wire that are 20cm in length
   2. Find the rest of the parts for your wheel:
     ![Wheel pieces](../img/assembly/WheelUnassembled.png)
-  3. Line up the wheel and the plastic hub
+  3. Line up the wheel and the plastic hub:
     ![Wheel pieces](../img/assembly/WheelStep1.png)
-  4. Use the wire to attach the plast hub to your wheel in a similar fashion to the way you would thread a button
+  4. Use the wire to attach the plast hub to your wheel in a similar fashion to the way you would thread a button:
     ![Wheel pieces](../img/assembly/WheelStep2.png)
-  5. Twist the ends of the wire together, this is what will tighten/lock the wheel to the hub
+  5. Twist the ends of the wire together, this is what will tighten/lock the wheel to the hub:
     ![Wheel pieces](../img/assembly/WheelStep3.png)
   6. Bend the twisted wire out of the way
 7. Attach the wheel to the servos, they lock on reasonably tight
