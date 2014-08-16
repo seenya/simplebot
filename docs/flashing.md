@@ -1,6 +1,7 @@
 # Flashing your Aduino
 
 To flash your Arduino follow these steps:
+
 1. Open the Arduino app
 2. Select File -> Open from the menu
   1. Select the SimpleBotFirmata/SimpleBotFirmata.ino file from the SimpleBot repository
