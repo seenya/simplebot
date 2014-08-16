@@ -75,6 +75,8 @@ Load up the simplebot/SimpleBotFirmata sketch.
 
 Compile and upload it to your arduino.
 
+[Step by Step Instructions for Flashing the Arduino](docs/flashing.md)
+
 Wire up your SimpleBot and then you have an examples folder with ping.js and simplebot.js which you can use as a base for everything else.
 
 The wiring diagrams are provided here:
