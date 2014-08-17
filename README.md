@@ -57,7 +57,9 @@ We'll have cardboard, cable ties and other prototyping stuff available on NBD to
 
 # SETUP
 
-To setup your SimpleBot we're assuming you have Arduino and NodeJS installed already. If you're using a LeoStick arduino follow the notes immediately below. If not, skip to "flashing my arduino" below.
+To setup your SimpleBot we're assuming you have Arduino and NodeJS installed already. If you haven't, check out the [prerequisites](https://github.com/nodebotsau/nbdau/blob/master/setup.md).
+
+If you're using a LeoStick arduino follow the notes immediately below. If not, skip to "flashing my arduino" below.
 
 ## Set up your LeoStick
 
@@ -71,23 +73,66 @@ If that works you're good to move on.
 
 ## Flashing my arduino
 
-Load up the simplebot/SimpleBotFirmata sketch.
+### Load up the simplebot/SimpleBotFirmata sketch.
+1.. Open the Arduino app
+2. Select File -> Open from the menu
+  1. Select the SimpleBotFirmata/SimpleBotFirmata.ino file from the SimpleBot repository
+  2. Click Open
+3. Select Tools -> Board -> &lt;Your Board&gt; from the menu
+  1. The 2014 NodeBotsDay used the Arduino Nano which sometimes shows up as "Arduino Nano w/ ATmega328"
+4. Plug the Arduino into your USB port
+5. Select Tools -> Serial Port -> /dev/tty.usbserial.XXXX from the menu
+  1. If you are unsure which to select then unplug your Arduino, check this menu item, then plug it back in and check the menu again
 
-Compile and upload it to your arduino.
+### Compile and upload it to your arduino.
 
-[Steps required to flash your arduino.](docs/flashing.md)
+1. Compile/Verify the code
+  1. Click the Tick button in your SimpleBotFirmata Arduino window
+2. Upload the code
+  1. Click the Right Arrow button that sits besides the Tick button
+
+## Assemlbing the SimpleBot
+
+ou can assemble your simple bot in the order that suits you best. You could do it the following way:
+
+1. Screw the nub/dome thing to the back of your base board 
+  1. Underneath the board at the bottom of the picture below
+2. Stick the breadboard at the back of your base board
+3. Attach the Servos to your base board
+4. It should now look like:
+
+  ![Base With Servos](../img/assembly/BaseWithServosAndArduino.png)
+5. Attach the front of the bot to the base
+  1. The front is the plastic piece sitting at the top of the previous picture
+6. Put the wheels together
+  1. Cut 4 lengths of wire that are 20cm in length
+  2. Find the rest of the parts for your wheel:
+
+    ![Wheel pieces](../img/assembly/WheelUnassembled.png)
+  3. Line up the wheel and the plastic hub:
+
+    ![Wheel aligned to hub](../img/assembly/WheelStep1.png)
+  4. Use the wire to attach the plast hub to your wheel in a similar fashion to the way you would thread a button:
+
+    ![Wheel threaded to hub](../img/assembly/WheelStep2.png)
+  5. Twist the ends of the wire together, this is what will tighten/lock the wheel to the hub:
+
+    ![Wheel and hub finished](../img/assembly/WheelStep3.png)
+  6. Bend the twisted wire out of the way
+7. Attach the wheel to the servos, they lock on reasonably tight
+8. Push your Arduino into your breadboard and wire everything up according to the wiring diagrams:
+  Schematic:
+
+  ![SimpleBot schematic](examples/wiring/basic_wiring_schematic.png)
+
+  Breadboard:
+
+  ![SimpleBot Breadboard diagram](examples/wiring/basic_wiring_bb.png)
+
+
+## Testing it out
 
 Wire up your SimpleBot and then you have an examples folder with ping.js and simplebot.js which you can use as a base for everything else.
-
-The wiring diagrams are provided here:
-
-Schematic:
-
-![SimpleBot schematic](examples/wiring/basic_wiring_schematic.png)
-
-Breadboard:
-
-![SimpleBot Breadboard diagram](examples/wiring/basic_wiring_bb.png)
 
 # Driving over Bluetooth
 
