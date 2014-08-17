@@ -94,7 +94,7 @@ If that works you're good to move on.
 
 ## Assemlbing the SimpleBot
 
-You can assemble your simple bot in the order that suits you best. You could do it the following way:
+You can assemble your SimpleBot in the order that suits you best. One way would be:
 
 1. Screw the nub/dome thing to the back of your base board 
   1. Underneath the board at the bottom of the picture below
@@ -141,11 +141,12 @@ Once you have it all wired up, look at the ping.js and simplebot.js files in the
 
 ### Testing issues
 
-* Make sure that the pin numbers on your nano board match the settings in your simplebot.js file. e.g.<br/>
-  ```javascript
-  var left_wheel  = new five.Servo({ pin:  9, type: 'continuous' }).to(LSTOPVAL);<br/>
-  var right_wheel = new five.Servo({ pin: 10, type: 'continuous' }).to(RSTOPVAL);
-  ```
+* Make sure that the pin numbers on your nano board match the settings in your simplebot.js file. e.g.
+
+```javascript
+var left_wheel  = new five.Servo({ pin:  9, type: 'continuous' }).to(LSTOPVAL);<br/>
+var right_wheel = new five.Servo({ pin: 10, type: 'continuous' }).to(RSTOPVAL);
+```
 
 # Driving over Bluetooth
 
