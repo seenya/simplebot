@@ -74,7 +74,8 @@ If that works you're good to move on.
 ## Flashing my arduino
 
 ### Load up the simplebot/SimpleBotFirmata sketch.
-1.. Open the Arduino app
+
+1. Open the Arduino app
 2. Select File -> Open from the menu
   1. Select the SimpleBotFirmata/SimpleBotFirmata.ino file from the SimpleBot repository
   2. Click Open
@@ -93,7 +94,7 @@ If that works you're good to move on.
 
 ## Assemlbing the SimpleBot
 
-ou can assemble your simple bot in the order that suits you best. You could do it the following way:
+You can assemble your simple bot in the order that suits you best. You could do it the following way:
 
 1. Screw the nub/dome thing to the back of your base board 
   1. Underneath the board at the bottom of the picture below
@@ -101,23 +102,23 @@ ou can assemble your simple bot in the order that suits you best. You could do i
 3. Attach the Servos to your base board
 4. It should now look like:
 
-  ![Base With Servos](../img/assembly/BaseWithServosAndArduino.png)
+  ![Base With Servos](img/assembly/BaseWithServosAndArduino.png)
 5. Attach the front of the bot to the base
   1. The front is the plastic piece sitting at the top of the previous picture
 6. Put the wheels together
   1. Cut 4 lengths of wire that are 20cm in length
   2. Find the rest of the parts for your wheel:
 
-    ![Wheel pieces](../img/assembly/WheelUnassembled.png)
+    ![Wheel pieces](img/assembly/WheelUnassembled.png)
   3. Line up the wheel and the plastic hub:
 
-    ![Wheel aligned to hub](../img/assembly/WheelStep1.png)
+    ![Wheel aligned to hub](img/assembly/WheelStep1.png)
   4. Use the wire to attach the plast hub to your wheel in a similar fashion to the way you would thread a button:
 
-    ![Wheel threaded to hub](../img/assembly/WheelStep2.png)
+    ![Wheel threaded to hub](img/assembly/WheelStep2.png)
   5. Twist the ends of the wire together, this is what will tighten/lock the wheel to the hub:
 
-    ![Wheel and hub finished](../img/assembly/WheelStep3.png)
+    ![Wheel and hub finished](img/assembly/WheelStep3.png)
   6. Bend the twisted wire out of the way
 7. Attach the wheel to the servos, they lock on reasonably tight
 8. Push your Arduino into your breadboard and wire everything up according to the wiring diagrams:
@@ -129,10 +130,29 @@ ou can assemble your simple bot in the order that suits you best. You could do i
 
   ![SimpleBot Breadboard diagram](examples/wiring/basic_wiring_bb.png)
 
+## Ultrasonic Sensor Wiring
+
+The ultrasonic sensor has 4 pins:
+1. Vcc - is attached to the positive end of the power source
+2. Trig - is attached to a digital input pin (e.g. pin d6)
+3. Echo - is attached to the same input pin as Trig
+4. GND - is attached to the negative/ground end of the power source
+
+### Assembling issues
+
+* Sometimes the negative wire will be coloured black, sometimes brown, and sometimes green.
 
 ## Testing it out
 
-Wire up your SimpleBot and then you have an examples folder with ping.js and simplebot.js which you can use as a base for everything else.
+Once you have it all wired up, look at the ping.js and simplebot.js files in the examples folder which you can use as a base for everything else.
+
+### Testing issues
+
+* Make sure that the pin numbers on your nano board match the settings in your simplebot.js file. e.g.
+  ```javascript
+  var left_wheel  = new five.Servo({ pin:  9, type: 'continuous' }).to(LSTOPVAL);
+  var right_wheel = new five.Servo({ pin: 10, type: 'continuous' }).to(RSTOPVAL);
+  ```
 
 # Driving over Bluetooth
 
