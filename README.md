@@ -100,39 +100,32 @@ You can assemble your simple bot in the order that suits you best. You could do 
   1. Underneath the board at the bottom of the picture below
 2. Stick the breadboard at the back of your base board
 3. Attach the Servos to your base board
-4. It should now look like:
-
+4. It should now look like:<br/>
   ![Base With Servos](img/assembly/BaseWithServosAndArduino.png)
 5. Attach the front of the bot to the base
   1. The front is the plastic piece sitting at the top of the previous picture
 6. Put the wheels together
   1. Cut 4 lengths of wire that are 20cm in length
-  2. Find the rest of the parts for your wheel:
-
+  2. Find the rest of the parts for your wheel:<br/>
     ![Wheel pieces](img/assembly/WheelUnassembled.png)
-  3. Line up the wheel and the plastic hub:
-
+  3. Line up the wheel and the plastic hub:<br/>
     ![Wheel aligned to hub](img/assembly/WheelStep1.png)
-  4. Use the wire to attach the plast hub to your wheel in a similar fashion to the way you would thread a button:
-
+  4. Use the wire to attach the plast hub to your wheel in a similar fashion to the way you would thread a button:<br/>
     ![Wheel threaded to hub](img/assembly/WheelStep2.png)
-  5. Twist the ends of the wire together, this is what will tighten/lock the wheel to the hub:
-
-    ![Wheel and hub finished](img/assembly/WheelStep3.png)
+  5. Twist the ends of the wire together, this is what will tighten/lock the wheel to the hub:<br/>
+   ![Wheel and hub finished](img/assembly/WheelStep3.png)
   6. Bend the twisted wire out of the way
 7. Attach the wheel to the servos, they lock on reasonably tight
 8. Push your Arduino into your breadboard and wire everything up according to the wiring diagrams:
-  Schematic:
-
+  Schematic:<br/>
   ![SimpleBot schematic](examples/wiring/basic_wiring_schematic.png)
-
-  Breadboard:
-
+  Breadboard:<br/>
   ![SimpleBot Breadboard diagram](examples/wiring/basic_wiring_bb.png)
 
 ## Ultrasonic Sensor Wiring
 
 The ultrasonic sensor has 4 pins:
+
 1. Vcc - is attached to the positive end of the power source
 2. Trig - is attached to a digital input pin (e.g. pin d6)
 3. Echo - is attached to the same input pin as Trig
@@ -148,9 +141,9 @@ Once you have it all wired up, look at the ping.js and simplebot.js files in the
 
 ### Testing issues
 
-* Make sure that the pin numbers on your nano board match the settings in your simplebot.js file. e.g.
+* Make sure that the pin numbers on your nano board match the settings in your simplebot.js file. e.g.<br/>
   ```javascript
-  var left_wheel  = new five.Servo({ pin:  9, type: 'continuous' }).to(LSTOPVAL);
+  var left_wheel  = new five.Servo({ pin:  9, type: 'continuous' }).to(LSTOPVAL);<br/>
   var right_wheel = new five.Servo({ pin: 10, type: 'continuous' }).to(RSTOPVAL);
   ```
 
